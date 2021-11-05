@@ -59,7 +59,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   gitRepo = ""
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Asobo-Test"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = "凱特琳之蝦雞巴亂玩❤"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["Hugo", "theme","even"]
   description = "Hugo theme even example site."
 
@@ -140,8 +140,8 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     clientSecret = ""       # Your client secret
 
   [params.utterances]       # https://utteranc.es/
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
+    owner = "katelynn620"              # Your GitHub ID
+    repo = "hugo-test"               # The repo to store comments
 
   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
     owner = ""              # Your GitHub ID
