@@ -14,19 +14,19 @@
 <meta name=author content="Michael Henderson"><meta name=description content="Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template."><meta name=keywords content="Hugo,theme,even">
 <meta name=generator content="Hugo 0.89.0 with theme even">
-<link rel=canonical href=http://localhost:1313/post/english-preview/>
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<link rel=manifest href=/manifest.json>
-<link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5>
-<link href=/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css rel=stylesheet>
+<link rel=canonical href=https://katelynn620.github.io/hugo-test/post/english-preview/>
+<link rel=apple-touch-icon sizes=180x180 href=/hugo-test/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/hugo-test/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/hugo-test/favicon-16x16.png>
+<link rel=manifest href=/hugo-test/manifest.json>
+<link rel=mask-icon href=/hugo-test/safari-pinned-tab.svg color=#5bbad5>
+<link href=/hugo-test/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css rel=stylesheet>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin=anonymous>
 <meta property="og:title" content="[English] Creating a New Theme">
 <meta property="og:description" content="Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
 We&rsquo;ll start with creating a new site with a very basic template.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://localhost:1313/post/english-preview/"><meta property="article:section" content="post">
+<meta property="og:url" content="https://katelynn620.github.io/hugo-test/post/english-preview/"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2017-08-31T15:43:48+08:00">
 <meta property="article:modified_time" content="2017-08-31T15:43:48+08:00">
 <meta itemprop=name content="[English] Creating a New Theme">
@@ -43,7 +43,7 @@ We&rsquo;ll start with creating a new site with a very basic template."><!--[if 
 <body>
 <div id=mobile-navbar class=mobile-navbar>
 <div class=mobile-header-logo>
-<a href=/ class=logo>Asobo</a>
+<a href=/hugo-test/ class=logo>Asobo-Test</a>
 </div>
 <div class=mobile-navbar-icon>
 <span></span>
@@ -53,15 +53,15 @@ We&rsquo;ll start with creating a new site with a very basic template."><!--[if 
 </div>
 <nav id=mobile-menu class="mobile-menu slideout-menu">
 <ul class=mobile-menu-list>
-<a href=/>
+<a href=/hugo-test/>
 <li class=mobile-menu-item>Home</li>
-</a><a href=/post/>
+</a><a href=/hugo-test/post/>
 <li class=mobile-menu-item>Archives</li>
-</a><a href=/tags/>
+</a><a href=/hugo-test/tags/>
 <li class=mobile-menu-item>Tags</li>
-</a><a href=/categories/>
+</a><a href=/hugo-test/categories/>
 <li class=mobile-menu-item>Categories</li>
-</a><a href=/about/>
+</a><a href=/hugo-test/about/>
 <li class=mobile-menu-item>About</li>
 </a>
 </ul>
@@ -69,20 +69,20 @@ We&rsquo;ll start with creating a new site with a very basic template."><!--[if 
 <div class=container id=mobile-panel>
 <header id=header class=header>
 <div class=logo-wrapper>
-<a href=/ class=logo>Asobo</a>
+<a href=/hugo-test/ class=logo>Asobo-Test</a>
 </div>
 <nav class=site-navbar>
 <ul id=menu class=menu>
 <li class=menu-item>
-<a class=menu-item-link href=/>Home</a>
+<a class=menu-item-link href=/hugo-test/>Home</a>
 </li><li class=menu-item>
-<a class=menu-item-link href=/post/>Archives</a>
+<a class=menu-item-link href=/hugo-test/post/>Archives</a>
 </li><li class=menu-item>
-<a class=menu-item-link href=/tags/>Tags</a>
+<a class=menu-item-link href=/hugo-test/tags/>Tags</a>
 </li><li class=menu-item>
-<a class=menu-item-link href=/categories/>Categories</a>
+<a class=menu-item-link href=/hugo-test/categories/>Categories</a>
 </li><li class=menu-item>
-<a class=menu-item-link href=/about/>About</a>
+<a class=menu-item-link href=/hugo-test/about/>About</a>
 </li>
 </ul>
 </nav>
@@ -96,7 +96,7 @@ We&rsquo;ll start with creating a new site with a very basic template."><!--[if 
 <div class=post-meta>
 <span class=post-time> 2017-08-31 </span>
 <div class=post-category>
-<a href=/categories/english/> English </a>
+<a href=/hugo-test/categories/english/> English </a>
 </div>
 </div>
 </header>
@@ -1887,17 +1887,17 @@ $ vi themes/zafta/layouts/_default/single.html
 </div>
 <footer class=post-footer>
 <div class=post-tags>
-<a href=/tags/preview/>preview</a>
-<a href=/tags/english/>English</a>
-<a href=/tags/tag-2/>tag-2</a>
+<a href=/hugo-test/tags/preview/>preview</a>
+<a href=/hugo-test/tags/english/>English</a>
+<a href=/hugo-test/tags/tag-2/>tag-2</a>
 </div>
 <nav class=post-nav>
-<a class=prev href=/post/hidden-post/>
+<a class=prev href=/hugo-test/post/hidden-post/>
 <i class="iconfont icon-left"></i>
 <span class="prev-text nav-default">This is a hidden post.</span>
 <span class="prev-text nav-mobile">上一篇</span>
 </a>
-<a class=next href=/post/japanese-preview/>
+<a class=next href=/hugo-test/post/japanese-preview/>
 <span class="next-text nav-default">[日本語] 敬語体系</span>
 <span class="next-text nav-mobile">下一篇</span>
 <i class="iconfont icon-right"></i>
@@ -1925,7 +1925,7 @@ $ vi themes/zafta/layouts/_default/single.html
 <a href=http://localhost:1313 class="iconfont icon-instagram" title=instagram></a>
 <a href=http://localhost:1313 class="iconfont icon-gitlab" title=gitlab></a>
 <a href=http://localhost:1313 class="iconfont icon-bilibili" title=bilibili></a>
-<a href=http://localhost:1313/index.xml type=application/rss+xml class="iconfont icon-rss" title=rss></a>
+<a href=https://katelynn620.github.io/hugo-test/index.xml type=application/rss+xml class="iconfont icon-rss" title=rss></a>
 </div>
 <div class=copyright>
 <span class=power-by>
@@ -1950,6 +1950,6 @@ $ vi themes/zafta/layouts/_default/single.html
 <script src=https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=anonymous></script>
 <script src=https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin=anonymous></script>
 <script src=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin=anonymous></script>
-<script type=text/javascript src=/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js></script>
+<script type=text/javascript src=/hugo-test/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js></script>
 </body>
 </html>
